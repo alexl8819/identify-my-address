@@ -1,0 +1,36 @@
+{
+  "name": "validate-my-address",
+  "private": "true",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-loader=extensionless --dns-result-order=ipv4first lib/server.js",
+    "build": "tsc -p .",
+    "lint": "npx eslint **/**.ts --max-warnings=0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alexl8819",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "camelcase": "^6.2.0",
+    "decamelize": "^4.0.0",
+    "getipintel": "git+https://github.com/idealwebsolutions/getipintel.js.git#ipv6-support",
+    "i18n-iso-countries": "^6.2.2",
+    "ioredis": "^4.27.3",
+    "is-ip": "^5.0.1",
+    "lru-cache": "^6.0.0",
+    "node-ipinfo": "^3.4.2",
+    "p-timeout": "^6.1.2",
+    "undici": "^5.23.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.8",
+    "@types/ioredis": "^4.17.8",
+    "@types/node": "^20.4.10",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "debug": "^4.3.4",
+    "eslint": "^8.47.0",
+    "extensionless": "^1.4.5",
+    "typescript": "^4.0.5"
+  }
+}

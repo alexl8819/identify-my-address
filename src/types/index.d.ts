@@ -1,0 +1,1 @@
+import 'getipintel/index.d.ts';
