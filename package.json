@@ -1,5 +1,5 @@
 {
-  "name": "validate-my-address",
+  "name": "identify-my-address",
   "private": "true",
   "type": "module",
   "scripts": {
